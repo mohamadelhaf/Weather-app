@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/dark_blue"
+    app:cardElevation="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/image_forecast"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="8dp"
+            tools:src="@drawable/ic_baseline_cloud_24"
+            />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_forecast"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"
+            android:text="Day"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_day"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/image_forecast"
+            tools:text="months"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_months"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/image_forecast"
+            tools:text="num"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_temp_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_num"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/image_forecast"
+            tools:text="temperature"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_temp_min_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_below="@id/tv_temp_forecast"
+            android:layout_toEndOf="@id/image_forecast"
+            tools:text="Temp min"
+            android:textColor="@color/white"/>
+
+        <TextView
+        android:id="@+id/tv_temp_max_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+        android:layout_below="@id/tv_temp_min_forecast"
+        android:layout_toEndOf="@id/image_forecast"
+        tools:text="Temp max"
+        android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_pressure_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_below="@id/tv_temp_max_forecast"
+            android:layout_toEndOf="@id/image_forecast"
+            tools:text="Pressure"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_humidity_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_below="@id/tv_pressure_forecast"
+            android:layout_toEndOf="@id/image_forecast"
+            tools:text="Humidity"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
